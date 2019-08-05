@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="ID"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_toRightOf="@+id/tvId"
+        android:hint="Nhập id " />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtId"
+        android:layout_marginTop="20dp"
+        android:text="Name"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtId"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/tvName"
+        android:hint="Nhập name " />
+
+    <TextView
+        android:id="@+id/tvYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtName"
+        android:layout_marginTop="20dp"
+        android:text="Year"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/tvYear"
+        android:hint="Nhập year " />
+
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtYear"
+        android:layout_marginTop="20dp"
+        android:text="Price"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtYear"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/tvPrice"
+        android:hint="Nhập price " />
+
+    <Button
+        android:textColor="@android:color/holo_red_dark"
+        android:id="@+id/btnThem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPrice"
+        android:layout_marginTop="10dp"
+        android:onClick="ThemNhanVien"
+        android:text="Thêm" />
+
+    <Button
+        android:textColor="@android:color/holo_red_dark"
+        android:onClick="sxtheonam"
+        android:id="@+id/btnSxyear"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPrice"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@+id/btnThem"
+        android:text="SX theo năm" />
+
+    <Button
+        android:textColor="@android:color/holo_red_dark"
+        android:id="@+id/btnSxPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPrice"
+        android:layout_alignRight="@+id/edtName"
+        android:layout_marginTop="10dp"
+        android:onClick="sxtheogia"
+        android:text="SX theo giá" />
+
+    <EditText
+        android:id="@+id/edtSearch"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnThem" />
+
+    <Button
+        android:textColor="@android:color/holo_red_dark"
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSxPrice"
+        android:layout_alignRight="@+id/btnSxPrice"
+        android:onClick="Timkiem"
+        android:text="Search" />
+
+    <ListView
+
+        android:id="@+id/lvList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSearch"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_margin="16dp"
+    android:layout_height="wrap_content"
+    tools:context=".SubActivity">
+
+    <TextView
+        android:textSize="30sp"
+        android:id="@+id/tvMa"
+        android:text="ID: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+
+        android:id="@+id/edtMa"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/tvMa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="Name: "
+        android:layout_below="@+id/tvMa"
+        android:textSize="30sp"
+        android:id="@+id/tvTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edtTen"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tvTen"
+        android:layout_below="@id/edtMa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvNam"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvTen"
+        android:textSize="30sp"
+        android:text="Year: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_toRightOf="@+id/tvNam"
+        android:layout_below="@+id/edtTen"
+        android:id="@+id/edtNam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvGia"
+        android:textSize="30sp"
+        android:layout_below="@+id/tvNam"
+        android:text="Price: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_toRightOf="@+id/tvGia"
+        android:id="@+id/edtGia"
+        android:layout_below="@+id/edtNam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
